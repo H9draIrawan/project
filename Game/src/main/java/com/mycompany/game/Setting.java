@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public interface Setting {
 
-    final ImageIcon Display = new ImageIcon("src/main/java/img/GreenLand.gif");//background
+    final ImageIcon Display = new ImageIcon("src/main/java/img/Land.png");//background
     final ImageIcon Dino1 = new ImageIcon("src/main/java/img/red.png");//tipe dino 1
     final ImageIcon Dino2 = new ImageIcon("src/main/java/img/blue.png");// tipe dino2
     final ImageIcon Dino3 = new ImageIcon("src/main/java/img/yellow.png");// tipe dino3
@@ -12,7 +12,7 @@ public interface Setting {
     final ImageIcon Spike = new ImageIcon("src/main/java/img/spike.png");//spike
     final ImageIcon Flame = new ImageIcon("src/main/java/img/flame.gif");// thron
 
-    final int PlayerX = 70, PlayerY = 370;
+    final int PlayerX = 70, PlayerY = 350;
     final int EnemyX = 1800,EnemyY = 150;
     final int SpikeX = 1000, SpikeY = 360;
     final int FlameX = 1500, FlameY = 330;
@@ -25,5 +25,6 @@ public interface Setting {
     public void SetPositions();
     public void SetScore();
     public void SetHit();
+    public void SetGameOver();
 
 }

@@ -1,5 +1,6 @@
 package com.mycompany.game;
 
+import java.util.ArrayList;
 import javax.swing.*;
 
 public class Home extends javax.swing.JFrame {
@@ -84,6 +85,7 @@ public class Home extends javax.swing.JFrame {
 
     private void highscoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highscoreActionPerformed
         this.setVisible(false);
+        new Score().setVisible(true);
 
     }//GEN-LAST:event_highscoreActionPerformed
 
@@ -122,6 +124,10 @@ public class Home extends javax.swing.JFrame {
                 new Home().setVisible(true);
             }
         });
+        Highscore<String, Integer> Leaderboard[] = new Highscore[10];
+        for (int i = 0; i < Leaderboard.length; i++) {
+            Leaderboard[i] = new Highscore<>(" ",0);
+        }
 
     }
 
